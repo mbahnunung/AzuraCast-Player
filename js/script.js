@@ -5,7 +5,7 @@
 const RADIO_NAME = 'Your Radio!';
 
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
-var API_SERVICE = 'DEEZER';
+var API_SERVICE = 'spotify';
 
 // Change Stream Audio URL from AzuraCast Here.
 const URL_STREAMING = 'https://asv.alhastream.com/listen/rbt/rbtfm';
