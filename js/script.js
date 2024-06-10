@@ -8,10 +8,10 @@ const RADIO_NAME = 'Your Radio!';
 var API_SERVICE = 'spotify';
 
 // Change Stream Audio URL from AzuraCast Here.
-const URL_STREAMING = 'https://asv.alhastream.com/listen/rbt/rbtfm';
+const URL_STREAMING = 'https://asv.alhastream.com/listen/radio_bintang_tenggara_2.0/radio';
 
 //NOW PLAYING AzuraCast API.
-const API_URL = 'https://asv.alhastream.com/api/nowplaying/rbt';
+const API_URL = 'https://asv.alhastream.com/api/nowplaying/radio_bintang_tenggara_2.0';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
