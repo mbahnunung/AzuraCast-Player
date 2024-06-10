@@ -8,10 +8,10 @@ const RADIO_NAME = 'Your Radio!';
 var API_SERVICE = 'DEEZER';
 
 // Change Stream Audio URL from AzuraCast Here.
-const URL_STREAMING = 'https://demo.azuracast.com/listen/azuratest_radio/radio.mp3';
+const URL_STREAMING = 'https://asv.alhastream.com/listen/rbt/rbtfm';
 
 //NOW PLAYING AzuraCast API.
-const API_URL = 'https://demo.azuracast.com/api/nowplaying/1';
+const API_URL = 'https://asv.alhastream.com/api/nowplaying/rbt';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
