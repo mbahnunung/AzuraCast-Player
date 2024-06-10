@@ -159,7 +159,7 @@ function Page() {
         const TANDA_WAKTU_SHOLAT_ISYA = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzt-WdylfzOt4IZmb5vj6PbWsGNOGpV8YlrDTs7fejgDXPUhPI3BZ46RGlcEQGZJ9odFY0F6b9nNLHLHkXQRv8ihvehx7hIv6fz9gsclWh-gA22pMZuoVZNQvralLXFH6DLGAuAIWN400HhQkL3XmycIIopi0EZCT8TqTdhpFUYSMsFrz-jGhGOtluDwW3/s1600/uSKMZns.jpg'; 
         const Anisa_Rahman = 'https://i.scdn.co/image/ab67616d0000b273948e6ac1d0bc98d8269b9697'; 
         const Anggun = 'https://i.scdn.co/image/ab67616d0000b273068bcbbb986ad0ee76c02f76'; 
-        const Station_Offline = 'https://ih1.redbubble.net/image.3013976729.5734/ur,pin_large_front,square,1000x1000.webp'; 
+        const Station_Offline = 'https://i.imgur.com/DamCEaf.jpg'; 
         
         if (artist == 'FRATELLO') {var urlCoverArt = FRATELLO;}
             else if (artist == 'Commercial Break') {var urlCoverArt = Commercial_Break;}
@@ -205,7 +205,7 @@ function Page() {
             else if (artist == 'TANDA WAKTU SHOLAT ISYA') {var urlCoverArt = TANDA_WAKTU_SHOLAT_ISYA;} 
             else if (artist == 'Anisa Rahman') {var urlCoverArt = Anisa_Rahman;} 
             else if (artist == 'Anggun') {var urlCoverArt = Anggun;} 
-            else if (artist == 'Station Offline') {var urlCoverArt = Station_Offline;}   
+            else if (artist == 'STATION OFFLINE') {var urlCoverArt = Station_Offline;}   
         // Default cover art
         else {var urlCoverArt = DEFAULT_COVER_ART;}
 
