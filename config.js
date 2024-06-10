@@ -29,5 +29,5 @@ var settings = {
     'next_song': false,
 
     // Path to default cover art when none are found
-    'default_cover_art': 'img/generic_song.jpg',
+    'default_cover_art': 'https://cdn.bintangtenggarafm.com/img/generic_song.jpg',
 };
