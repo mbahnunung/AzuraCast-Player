@@ -78,7 +78,7 @@ function Page() {
         const Commercial_Break = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibcs6vIO8Vba2tDSU0hUJP3hs91nM0creXY3ZIOdj-q5YWXxZp_X5R7nSCwaxWd-K_erlfIkdDH9CvgXfKr-gUmJ_JzNLyohKv0eLqxHUhWfO7hOjgcQ95D4dFOFlsV_rTmGYFJ-13tU0GUeis_VPd2SWxrRNhCYMPusLfZ_U5g4W4jg1ONV3aT8UaPTqJ/s1600/gMzoJtq.jpg';
         const JINGLESETELAHIKLAN = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7LcmmE4HMmFeQYRqMJsfOlI7qtoBGpvk2Y2aMm1XSpQ_FcIZWELwnh-8ykQy9s05Qlz5nFgJAQy2zTZn_k3G8DtVQwWTlgDIEZeqm3mas2VCv-36CklyI5D4QZkF_EzD8eq7DcwqmTsndHC17wGUCVltPbyWqWSKoODfbKwg_D73Q4wEASuu77Xb-BugP/s1600/dbwvp4y.png';
         const TS = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoYOoThYoQy_1IHIOkOWhSv7ZumvhWQVgCCUAa1PtItmRqi7LpFLBOlRVnmMJvjw2_m91utqlbmj_XRJzqxROWHC5fJqk664UghWdsbX_sqI4vMFue3Ii68m4cfh5kQNAWFM6v4YGjSyP1TdH1SySeBmMx9Ewaeyyu5qhTcon4wKP0VFY9KxHvJrEScFED/s1600/P8KFcGD.png';
-        const Bintang_Tenggara = 'ing/fF8yUE0.png';
+        const Bintang_Tenggara = 'img/fF8yUE0.png';
         const Dengarkami = 'https://deow9bq0xqvbj.cloudfront.net/image-logo/937464/listen-to-me_300x300.jpg';
         const jingle = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwRqAS90NVntGw3KRvRy8ZfMmOWAUH6r7-0fDph8OXZE5aOEE8VHnvNP4DqpPNTOaQ6eqJJUpyW-QG9092-UjOCnbw4hzHXkZ4q4_68WeZHMqWHcUW6qV42XVK-EJhiqNSLXwveYZnUGWuSs6QOy0bz2omDTyrE-yUay1TbClQS5a91JjyKskyNtWT0bRo/s1600/ed6F7ZU.jpg';
         const TANDAWAKTUSHOLATDHUHUR = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzt-WdylfzOt4IZmb5vj6PbWsGNOGpV8YlrDTs7fejgDXPUhPI3BZ46RGlcEQGZJ9odFY0F6b9nNLHLHkXQRv8ihvehx7hIv6fz9gsclWh-gA22pMZuoVZNQvralLXFH6DLGAuAIWN400HhQkL3XmycIIopi0EZCT8TqTdhpFUYSMsFrz-jGhGOtluDwW3/s1600/uSKMZns.jpg';
@@ -206,7 +206,7 @@ function Page() {
         const Commercial_Break = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibcs6vIO8Vba2tDSU0hUJP3hs91nM0creXY3ZIOdj-q5YWXxZp_X5R7nSCwaxWd-K_erlfIkdDH9CvgXfKr-gUmJ_JzNLyohKv0eLqxHUhWfO7hOjgcQ95D4dFOFlsV_rTmGYFJ-13tU0GUeis_VPd2SWxrRNhCYMPusLfZ_U5g4W4jg1ONV3aT8UaPTqJ/s1600/gMzoJtq.jpg';
         const JINGLESETELAHIKLAN = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7LcmmE4HMmFeQYRqMJsfOlI7qtoBGpvk2Y2aMm1XSpQ_FcIZWELwnh-8ykQy9s05Qlz5nFgJAQy2zTZn_k3G8DtVQwWTlgDIEZeqm3mas2VCv-36CklyI5D4QZkF_EzD8eq7DcwqmTsndHC17wGUCVltPbyWqWSKoODfbKwg_D73Q4wEASuu77Xb-BugP/s1600/dbwvp4y.png';
         const TS = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoYOoThYoQy_1IHIOkOWhSv7ZumvhWQVgCCUAa1PtItmRqi7LpFLBOlRVnmMJvjw2_m91utqlbmj_XRJzqxROWHC5fJqk664UghWdsbX_sqI4vMFue3Ii68m4cfh5kQNAWFM6v4YGjSyP1TdH1SySeBmMx9Ewaeyyu5qhTcon4wKP0VFY9KxHvJrEScFED/s1600/P8KFcGD.png';
-        const Bintang_Tenggara = 'ing/fF8yUE0.png';
+        const Bintang_Tenggara = 'img/fF8yUE0.png';
         const Dengarkami = 'https://warningfm.github.io/v3/img/yx3lPLHp_t.jpg';
         const jingle = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwRqAS90NVntGw3KRvRy8ZfMmOWAUH6r7-0fDph8OXZE5aOEE8VHnvNP4DqpPNTOaQ6eqJJUpyW-QG9092-UjOCnbw4hzHXkZ4q4_68WeZHMqWHcUW6qV42XVK-EJhiqNSLXwveYZnUGWuSs6QOy0bz2omDTyrE-yUay1TbClQS5a91JjyKskyNtWT0bRo/s1600/ed6F7ZU.jpg';
         const TANDAWAKTUSHOLATDHUHUR = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2F9RU0k7w_EWKjhsDP-YJAfCnFxFzW21G8mqmiSDSf-J5ocGv4yOjb5nuGFhlJW9iBAPWgjEn4jhr-bt-CK84RGFtJf6JneNMZgpbYV1Mi-mwbr7rzeu77mm-MqL7rbk_8O5sduTnGPdMj000VGVCbGc_gR1IgAr6-FrDcXpg-vun-lebVxtLEnuGAwUz/s1600/m2iqnIm.jpg';
