@@ -29,5 +29,5 @@ var settings = {
     'next_song': false,
 
     // Path to default cover art when none are found
-    'default_cover_art': 'https://cdn.bintangtenggarafm.com/img/generic_song.jpg',
+    'default_cover_art': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIUmU3WDb_IzhuaFgQeTvWR35SQGpCrCIN4ifCrJ9-mYB83BtcnBMjUikMZNKx1kOiYxP6O_c3iDdt6UNSC-pgqY6TJ0lupqxTYVZraREwa-FGkUJAEEBg7ZkG4ixvSIWmn0nnQhmr0_2yN8Y3fACkxqbb1ILSveD21F6R3nWRrIrsUECI5lFulqrb-O3U/s1600/m60X6pG.png',
 };
