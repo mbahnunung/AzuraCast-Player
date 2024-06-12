@@ -19,9 +19,6 @@ const HISTORIC = settings.historic;
 const NEXT_SONG = settings.next_song;
 const DEFAULT_COVER_ART = settings.default_cover_art;
 
-// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
-var API_SERVICE = 'spotify';
-
 window.onload = function () {
   var page = new Page;
   page.changeTitlePage();
