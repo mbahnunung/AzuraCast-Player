@@ -373,7 +373,7 @@ function getStreamingData() {
   var d = new Date();
 
   // Requisition with timestamp to prevent cache on mobile devices
-  xhttp.open('GET', API_URL);
+  xhttp.open('GET', API_URL, true);
   xhttp.send();
 }
 
