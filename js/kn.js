@@ -304,7 +304,7 @@ function Page() {
             else if (artist == 'Power Slaves') {var urlCoverArt = Power_Slaves;} 
             else if (artist == 'Second Civil') {var urlCoverArt = Second_Civil;}
             else if (artist == 'Ismi Azis') {var urlCoverArt = Ismi_Azis;}
-            else if (artist == '- Station Offline') {var urlCoverArt = -Station_Offline;}  
+            else if (artist == '-Station Offline') {var urlCoverArt = -Station_Offline;}  
         // Default cover art
         else {var urlCoverArt = DEFAULT_COVER_ART;}
 
