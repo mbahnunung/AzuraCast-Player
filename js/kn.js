@@ -256,6 +256,7 @@ function Page() {
         const Power_Slaves = 'https://i.scdn.co/image/ab67616d0000b2733fd1e0089d0b10e143ea976f'; 
         const Second_Civil = 'https://i.scdn.co/image/ab67616d0000b2732f75cb4fe81408c68d9e847d'; 
         const Ismi_Azis = 'https://i.scdn.co/image/ab67616d0000b273835d5ee8832686e418f78e4f'; 
+        const Station_Offline = 'https://i.imgur.com/Ah2XSta.png'; 
 
         if (artist == 'Commercial Break') {var urlCoverArt = Commercial_Break;}
             else if (artist == 'Bintang Tenggara') {var urlCoverArt = Bintang_Tenggara;}
@@ -303,6 +304,7 @@ function Page() {
             else if (artist == 'Power Slaves') {var urlCoverArt = Power_Slaves;} 
             else if (artist == 'Second Civil') {var urlCoverArt = Second_Civil;}
             else if (artist == 'Ismi Azis') {var urlCoverArt = Ismi_Azis;}
+            else if (artist == 'Station Offline') {var urlCoverArt = Station_Offline;}  
         // Default cover art
         else {var urlCoverArt = DEFAULT_COVER_ART;}
 
