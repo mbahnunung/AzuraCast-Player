@@ -26,8 +26,8 @@ var settings = {
     // Only for SHOUTCast!
     // Set to true to show the next song to be played. 
     // Make sure your streaming show this information!
-    'next_song': false,
+    'next_song': true,
 
     // Path to default cover art when none are found
-    'default_cover_art': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIUmU3WDb_IzhuaFgQeTvWR35SQGpCrCIN4ifCrJ9-mYB83BtcnBMjUikMZNKx1kOiYxP6O_c3iDdt6UNSC-pgqY6TJ0lupqxTYVZraREwa-FGkUJAEEBg7ZkG4ixvSIWmn0nnQhmr0_2yN8Y3fACkxqbb1ILSveD21F6R3nWRrIrsUECI5lFulqrb-O3U/s1600/m60X6pG.png',
+    'default_cover_art': 'https://live.staticflickr.com/65535/53809685413_aa4635886b_b.jpg',
 };
