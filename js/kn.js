@@ -125,7 +125,7 @@ function Page() {
 
         // should put track recognition and change in DOM text
 
-        var artistRadio = info.song.artist.replace(/&apos;/g, '\'');
+      var artistRadio = info.song.artist.replace(/&apos;/g, '\'');
         if (artistRadio == 'Commercial Break') {var urlCoverArt = Commercial_Break;}
         else if (artistRadio == 'Bintang Tenggara') {var urlCoverArt = Bintang_Tenggara;}
         else if (artistRadio == 'JINGLE SETELAH IKLAN') {var urlCoverArt = JINGLESETELAHIKLAN;}
@@ -171,7 +171,7 @@ function Page() {
         else if (artistRadio == 'Power Slaves') {var urlCoverArt = Power_Slaves;} 
         else if (artistRadio == 'Second Civil') {var urlCoverArt = Second_Civil;}
         else if (artistRadio == 'Ismi Azis') {var urlCoverArt = Ismi_Azis;}
-        else {var urlCoverArt = DEFAULT_COVER_ART;}
+      else {var urlCoverArt = DEFAULT_COVER_ART;}
 
    // Get cover art for song history
     var xhttp = new XMLHttpRequest();
@@ -208,7 +208,7 @@ function Page() {
   }
   
   // Artist Covers - Below 
-       this.refreshCover = function (song = '', artist) {
+   this.refreshCover = function (song = '', artist) {
         const Commercial_Break = "https://live.staticflickr.com/65535/53805955404_bc1c26a8c8_z.jpg";
         const Bintang_Tenggara = 'https://images2.imgbox.com/b5/4d/sAj3xEK2_o.png';
         const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
