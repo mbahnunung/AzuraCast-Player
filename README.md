@@ -26,7 +26,7 @@ Open The img folder and add your logo named "cover.png"
 
 ### Demo Screenshots
 
-![Demo Screenshot](https://github.com/PeWe79/RadioPlayer/blob/main/img/thumb.png)
+![Demo Screenshot](https://github.com/mbahnunung/AzuraCast-Player/blob/main/img/thumb.png)
 
 
 ### Supported Streaming Hosting Types
