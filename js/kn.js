@@ -76,11 +76,11 @@ function Page() {
     var urlCoverArt = DEFAULT_COVER_ART; 
     // Defining Track Backgrounds - Above
         const Commercial_Break = "https://live.staticflickr.com/65535/53805955404_bc1c26a8c8_z.jpg";
-        const Bintang_Tenggara = 'https://images2.imgbox.com/b5/4d/sAj3xEK2_o.png';
-        const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
+        const Bintang_Tenggara = 'https://thumbs2.imgbox.com/d3/8c/gZlJT3OQ_t.png';
+        const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53804698952_be7cefe6cd_z.jpg';
         const TS = 'https://live.staticflickr.com/65535/53806077625_4cd26b7cf5_z.jpg';
         const Dengarkami = 'https://live.staticflickr.com/65535/53813054961_c1727b86fd.jpg';
-        const jingle = 'https://live.staticflickr.com/65535/53804698952_be7cefe6cd_z.jpg';
+        const jingle = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
         const TANDAWAKTUSHOLATDHUHUR = 'https://live.staticflickr.com/65535/53815587960_2ded7e8990_z.jpg';
         const ASHAR = 'https://live.staticflickr.com/65535/53808429057_45e11e4986_z.jpg';
         const ADZANMAGHRIB = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNqNb72rVTrjbv4OaLt1qAFkjySlaFJp34YyC_XJ6RNtoBXq_bYSp8cmubhyphenhyphenKBUxxytuneVwHHCSMmomBwSYN4LdmH6QXTV1e5YIkjTS0677w_lnuMqX3isz5WIhFO_6pAHJriBkQyevuv5AgH1_hpsoQYsliB_5KsyFzXi2STQ9GGKWIB9l5IiAg8_uuc/s1600/sXTgm2j.jpg';
@@ -92,7 +92,7 @@ function Page() {
         const SHOLAWAT = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIpqY48J4bs8uxDW02DXU_87iAkbYboTn0pxJQ5p0wyoQKt4YYr7BnqczK2UhAcbHkeUyM2m-5IHhUD_jTvWts-7HPMgRU1s4ZJsstS-Kq74NNqHRgsdxkrUoEGhttVFPkCjjR_O766XT_r1WaC2kcUgwkAP9zWSXLzvocqlz-0Y8NU3ViCiC-T9Jfb5bz/s1600/Wf3SDEt.png';
         const RadioBintangTenggara = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLSPAs-qRbddzeii-poy3k5Tsz26fYDw8AFeK04iNOxM1HCD6zMOmi5i9bhK6FBGDree32YzCUhiThpyFYr5Cd9A4yiHlOH9MnYPlH3psMW_zzRL0I6yCuMuAA1RvFfGSJEsY0UY3kQjG8xUDSarEVEWBdFS046suoDe25Ar0K8izBvMwrJIZl-aJ_U_1I/s1600/fF8yUE0.png';
         const AlffyRev  = 'https://i.scdn.co/image/ab67616d0000b273d0572746e75788f3a073899b';
-        const Ajeng = 'https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/e5/47/cf/e547cfe3-f707-7175-9123-b640435f6a8c/cover.jpg/1200x1200bb.jpg';
+        const Ajeng = 'https://i.scdn.co/image/ab67616d00001e02f82c2fa93ef91d7cc86be1d2';
         const Agnes_Monica = 'https://e-cdns-images.dzcdn.net/images/cover/ff26191927ceb7ae9e0e6f6c0af570b8/500x500-000000-80-0-0.jpg';
         const INNA_Ft_Yandel = 'https://i1.sndcdn.com/artworks-000060831547-7emuqa-t500x500.jpg';
         const SOLUSI_SEHAT = 'https://images2.imgbox.com/f8/ca/GwuLQxLZ_o.jpg';
@@ -122,10 +122,11 @@ function Page() {
         const Power_Slaves = 'https://i.scdn.co/image/ab67616d0000b2733fd1e0089d0b10e143ea976f'; 
         const Second_Civil = 'https://i.scdn.co/image/ab67616d0000b2732f75cb4fe81408c68d9e847d'; 
         const Ismi_Azis = 'https://i.scdn.co/image/ab67616d0000b273835d5ee8832686e418f78e4f'; 
+        const IKLAN = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_jT-59DMrZxG0adpN-g_aRyaQerImHeqMBjPktsug-BeevbsqQNNZY-yhmwamvEOeFw43R0-BUtdmXxrDZTsCYziDeOvKxne968l9N0ECtpvRxPVReHMHa89oewr-Ac2YBcJfKrNX09gKmOW20NOISglFsV38c44TREtSEzK1p221sY8DNtu6R0HXX7OA/s1600/500x500iklan.jpg'; 
 
         // should put track recognition and change in DOM text
 
-      var artistRadio = info.song.artist.replace(/&apos;/g, '\'');
+        var artistRadio = info.artist.replace(/&apos;/g, '\'');
         if (artistRadio == 'Commercial Break') {var urlCoverArt = Commercial_Break;}
         else if (artistRadio == 'Bintang Tenggara') {var urlCoverArt = Bintang_Tenggara;}
         else if (artistRadio == 'JINGLE SETELAH IKLAN') {var urlCoverArt = JINGLESETELAHIKLAN;}
@@ -171,7 +172,8 @@ function Page() {
         else if (artistRadio == 'Power Slaves') {var urlCoverArt = Power_Slaves;} 
         else if (artistRadio == 'Second Civil') {var urlCoverArt = Second_Civil;}
         else if (artistRadio == 'Ismi Azis') {var urlCoverArt = Ismi_Azis;}
-      else {var urlCoverArt = DEFAULT_COVER_ART;}
+        else if (artistRadio == 'IKLAN') {var urlCoverArt = IKLAN;}
+    else {var urlCoverArt = DEFAULT_COVER_ART;}
 
    // Get cover art for song history
     var xhttp = new XMLHttpRequest();
