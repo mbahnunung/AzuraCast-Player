@@ -126,7 +126,7 @@ function Page() {
 
         // should put track recognition and change in DOM text
 
-        var artistRadio = info.artist.replace(/&apos;/g, '\'');
+        var artistRadio = info.song.artist.replace(/&apos;/g, '\'');
         if (artistRadio == 'Commercial Break') {var urlCoverArt = Commercial_Break;}
         else if (artistRadio == 'Bintang Tenggara') {var urlCoverArt = Bintang_Tenggara;}
         else if (artistRadio == 'JINGLE SETELAH IKLAN') {var urlCoverArt = JINGLESETELAHIKLAN;}
