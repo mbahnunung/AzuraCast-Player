@@ -15,7 +15,7 @@ var settings = {
     'url_streaming': 'https://asv.alhastream.com:3310/radio',
 
     //NOW PLAYING AzuraCast API.
-    'api_url': 'https://asv.alhastream.com/api/nowplaying/34',
+    'api_url': 'https://asv.alhastream.com/api/nowplaying/radio_bintang_tenggara_2.0',
 
     // Visit https://api.vagalume.com.br/docs/ to get your API key
     'api_key': '18fe07917957c289983464588aabddfb',
