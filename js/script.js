@@ -5,7 +5,7 @@
 const RADIO_NAME = 'Your Radio!';
 
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
-var API_SERVICE = 'spotify';
+var API_SERVICE = 'deezer';
 
 // Change Stream Audio URL from AzuraCast Here.
 const URL_STREAMING = 'https://asv.alhastream.com/listen/radio_bintang_tenggara_2.0/radio';
