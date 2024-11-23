@@ -17,22 +17,22 @@ const API_URL = 'https://asv.alhastream.com/api/nowplaying/27';
 const API_KEY = "18fe07917957c289983464588aabddfb";
 
 window.onload = function () {
-  var page = new Page;
-  page.changeTitlePage();
-  page.setVolume();
+    var page = new Page;
+    page.changeTitlePage();
+    page.setVolume();
 
-  var player = new Player();
-  player.play();
+    var player = new Player();
+    player.play();
 
-  getStreamingData();
-  // Interval to get streaming data in miliseconds
-  setInterval(function () {
     getStreamingData();
-  }, 10000);
+    // Interval to get streaming data in miliseconds
+    setInterval(function () {
+        getStreamingData();
+    }, 10000);
 
-  var coverArt = document.getElementsByClassName('cover-album')[0];
+    var coverArt = document.getElementsByClassName('cover-album')[0];
 
-  coverArt.style.height = coverArt.offsetWidth + 'px';
+    coverArt.style.height = coverArt.offsetWidth + 'px';
 }
 
 // DOM control
