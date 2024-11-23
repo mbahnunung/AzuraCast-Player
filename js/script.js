@@ -11,7 +11,7 @@ var API_SERVICE = 'spotify';
 const URL_STREAMING = 'https://asv.alhastream.com/listen/radio_bintang_tenggara_2.0/radio';
 
 //NOW PLAYING AzuraCast API.
-const API_URL = 'https://asv.alhastream.com/api/nowplaying/34';
+const API_URL = 'https://asv.alhastream.com/api/nowplaying/27';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
