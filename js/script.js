@@ -1,14 +1,22 @@
-/**
- * AzuraCast streaming server only
- * 
- */
+/*
+The MIT License (MIT) 
+PARAN JARE RIKO
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
 const RADIO_NAME = 'Your Radio!';
 
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
-var API_SERVICE = 'deezer';
+var API_SERVICE = 'DEEZER';
 
 // Change Stream Audio URL from AzuraCast Here.
-const URL_STREAMING = 'https://asv.alhastream.com/listen/radio_bintang_tenggara_2.0/radio';
+const URL_STREAMING = 'https://asv.alhastream.com:3310/radio';
 
 //NOW PLAYING AzuraCast API.
 const API_URL = 'https://asv.alhastream.com/api/nowplaying/27';
@@ -17,95 +25,95 @@ const API_URL = 'https://asv.alhastream.com/api/nowplaying/27';
 const API_KEY = "18fe07917957c289983464588aabddfb";
 
 window.onload = function () {
-    var page = new Page;
-    page.changeTitlePage();
-    page.setVolume();
+  var page = new Page;
+  page.changeTitlePage();
+  page.setVolume();
 
-    var player = new Player();
-    player.play();
+  var player = new Player();
+  player.play();
 
+  getStreamingData();
+  // Interval to get streaming data in miliseconds
+  setInterval(function () {
     getStreamingData();
-    // Interval to get streaming data in miliseconds
-    setInterval(function () {
-        getStreamingData();
-    }, 10000);
+  }, 10000);
 
-    var coverArt = document.getElementsByClassName('cover-album')[0];
+  var coverArt = document.getElementsByClassName('cover-album')[0];
 
-    coverArt.style.height = coverArt.offsetWidth + 'px';
+  coverArt.style.height = coverArt.offsetWidth + 'px';
 }
 
 // DOM control
 function Page() {
-    this.changeTitlePage = function (title = RADIO_NAME) {
-        document.title = title;
-    };
+  this.changeTitlePage = function (title = RADIO_NAME) {
+    document.title = title;
+  };
 
-    this.refreshCurrentSong = function (song, artist) {
-        var currentSong = document.getElementById('currentSong');
-        var currentArtist = document.getElementById('currentArtist');
+  this.refreshCurrentSong = function (song, artist) {
+    var currentSong = document.getElementById('currentSong');
+    var currentArtist = document.getElementById('currentArtist');
 
-        if (song !== currentSong.innerHTML) {
-            // Animate transition
-            currentSong.className = 'animated flipInY text-uppercase';
-            currentSong.innerHTML = song;
+    if (song !== currentSong.innerHTML) {
+      // Animate transition
+      currentSong.className = 'animated flipInY text-uppercase';
+      currentSong.innerHTML = song;
 
-            currentArtist.className = 'animated flipInY text-capitalize';
-            currentArtist.innerHTML = artist;
+      currentArtist.className = 'animated flipInY text-capitalize';
+      currentArtist.innerHTML = artist;
 
-            // Refresh modal title
-            document.getElementById('lyricsSong').innerHTML = song + ' - ' + artist;
+      // Refresh modal title
+      document.getElementById('lyricsSong').innerHTML = song + ' - ' + artist;
 
-            // Remove animation classes
-            setTimeout(function () {
-                currentSong.className = 'text-uppercase';
-                currentArtist.className = 'text-capitalize';
-            }, 2000);
-        }
+      // Remove animation classes
+      setTimeout(function () {
+        currentSong.className = 'text-uppercase';
+        currentArtist.className = 'text-capitalize';
+      }, 2000);
     }
+  }
 
-    this.refreshHistoric = function (info, n) {
-        var $historicDiv = document.querySelectorAll('#historicSong article');
-        var $songName = document.querySelectorAll('#historicSong article .music-info .song');
-        var $artistName = document.querySelectorAll('#historicSong article .music-info .artist');
+  this.refreshHistoric = function (info, n) {
+    var $historicDiv = document.querySelectorAll('#historicSong article');
+    var $songName = document.querySelectorAll('#historicSong article .music-info .song');
+    var $artistName = document.querySelectorAll('#historicSong article .music-info .artist');
 
-        // Default cover art
-        var urlCoverArt = 'img/cover.png';
+    // Default cover art
+    var urlCoverArt = 'img/cover.png';
 
-        // Get cover art for song history
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                var data = JSON.parse(this.responseText);
-                var artwork = data.results.artwork;
-                 var artworkXL = artwork.large;
+    // Get cover art for song history
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        var data = JSON.parse(this.responseText);
+        var artwork = data.results.artwork;
+        var artworkXL = artwork.large;
 
-                document.querySelectorAll('#historicSong article .cover-historic')[n].style.backgroundImage = 'url(' + artworkXL + ')';
-            }
-            // Formating characters to UTF-8
-            var music = info.song.replace(/&apos;/g, '\'');
-            var songHist = music.replace(/&amp;/g, '&');
+        document.querySelectorAll('#historicSong article .cover-historic')[n].style.backgroundImage = 'url(' + artworkXL + ')';
+      }
+      // Formating characters to UTF-8
+      var music = info.song.title.replace(/&amp;/g, '&');;
+      var songHist = music.replace(/&amp;/g, '&');
 
-            var artist = info.artist.replace(/&apos;/g, '\'');
-            var artistHist = artist.replace(/&amp;/g, '&');
+      var artist = info.song.artist.replace(/&apos;/g, '\'');
+      var artistHist = artist.replace(/&amp;/g, '&');
 
-            $songName[n].innerHTML = songHist;
-            $artistName[n].innerHTML = artistHist;
+      $songName[n].innerHTML = songHist;
+      $artistName[n].innerHTML = artistHist;
 
-            // Add class for animation
-            $historicDiv[n].classList.add('animated');
-            $historicDiv[n].classList.add('slideInRight');
-        }
-        xhttp.open('GET', 'https://prod-api.radioapi.me/1ceb9727-3e36-4e64-99e7-f776b50c7f4f/musicsearch?query=' + info.artist + ' ' + info.song);
-        xhttp.send();
-
-        setTimeout(function () {
-            for (var j = 0; j < 2; j++) {
-                $historicDiv[j].classList.remove('animated');
-                $historicDiv[j].classList.remove('slideInRight');
-            }
-        }, 2000);
+      // Add class for animation
+      $historicDiv[n].classList.add('animated');
+      $historicDiv[n].classList.add('slideInRight');
     }
+    xhttp.open('GET', 'https://prod-api.radioapi.me/1ceb9727-3e36-4e64-99e7-f776b50c7f4f/musicsearch?query=' + info.song.artist + ' ' + info.song.title);
+    xhttp.send();
+
+    setTimeout(function () {
+      for (var j = 0; j < 2; j++) {
+        $historicDiv[j].classList.remove('animated');
+        $historicDiv[j].classList.remove('slideInRight');
+      }
+    }, 2000);
+  }
 
   this.refreshCover = function (song = '', artist) {
         // Default cover art
@@ -120,7 +128,7 @@ function Page() {
             if (this.readyState === 4 && this.status === 200) {
                 var data = JSON.parse(this.responseText);
                 var artworkUrl100 = data.results;
-                var urlCoverArt = artworkUrl100.artwork.big;
+                var urlCoverArt = artworkUrl100.artwork.large;
 
                 coverArt.style.backgroundImage = 'url(' + urlCoverArt + ')';
                 coverArt.className = 'animated bounceInLeft';
@@ -281,6 +289,13 @@ audio.onvolumechange = function () {
   }
 }
 
+//audio.onerror = function () {
+  //var confirmacao = confirm('Stream Down / Network Error. \nClick OK to try again.');
+
+  //if (confirmacao) {
+    //window.location.reload();
+  //}
+//}
 
 document.getElementById('volume').oninput = function () {
   audio.volume = intToDecimal(this.value);
@@ -349,7 +364,7 @@ function getStreamingData() {
       let artist = data.now_playing.song.artist.replace(/&apos;/g, '\'');
 
       // Change the title
-      document.title = artist + ' - ' + title + ' | ' + RADIO_NAME;
+      document.title = title + ' - ' + artist + ' | ' + RADIO_NAME;
 
       if (document.getElementById('currentSong').innerHTML !== title) {
         page.refreshCover(title, artist);
@@ -366,7 +381,7 @@ function getStreamingData() {
   var d = new Date();
 
   // Requisition with timestamp to prevent cache on mobile devices
-  xhttp.open('GET', API_URL, true);
+  xhttp.open('GET', API_URL);
   xhttp.send();
 }
 
