@@ -120,7 +120,7 @@ function Page() {
             if (this.readyState === 4 && this.status === 200) {
                 var data = JSON.parse(this.responseText);
                 var artworkUrl100 = data.results;
-                var urlCoverArt = artworkUrl100.artwork.medium;
+                var urlCoverArt = artworkUrl100.artwork.big;
 
                 coverArt.style.backgroundImage = 'url(' + urlCoverArt + ')';
                 coverArt.className = 'animated bounceInLeft';
