@@ -108,71 +108,71 @@ function Page() {
   }
 
   this.refreshCover = function (song = '', artist) {
-    // Default cover art
-    var urlCoverArt = 'img/generic_song.jpg';
+        // Default cover art
+        var urlCoverArt = 'img/cover.png';
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      var coverArt = document.getElementById('currentCoverArt');
-      var coverBackground = document.getElementById('bgCover');
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            var coverArt = document.getElementById('currentCoverArt');
+            var coverBackground = document.getElementById('bgCover');
 
-      // Get cover art URL on iTunes API
-      if (this.readyState === 4 && this.status === 200) {
-        var data = JSON.parse(this.responseText);
-        var artworkUrl100 = data.results;
-        var urlCoverArt = artworkUrl100.artwork.xl;
+            // Get cover art URL on iTunes API
+            if (this.readyState === 4 && this.status === 200) {
+                var data = JSON.parse(this.responseText);
+                var artworkUrl100 = data.results;
+                var urlCoverArt = artworkUrl100.artwork.medium;
 
-        coverArt.style.backgroundImage = 'url(' + urlCoverArt + ')';
-        coverArt.className = 'animated bounceInLeft';
+                coverArt.style.backgroundImage = 'url(' + urlCoverArt + ')';
+                coverArt.className = 'animated bounceInLeft';
 
-        coverBackground.style.backgroundImage = 'url(' + urlCoverArt + ')';
+                coverBackground.style.backgroundImage = 'url(' + urlCoverArt + ')';
 
-        setTimeout(function () {
-          coverArt.className = '';
-        }, 2000);
+                setTimeout(function () {
+                    coverArt.className = '';
+                }, 2000);
 
-        if ('mediaSession' in navigator) {
-          navigator.mediaSession.metadata = new MediaMetadata({
-            title: song,
-            artist: artist,
-            artwork: [{
-              src: urlCoverArt,
-              sizes: '96x96',
-              type: 'image/png'
-            },
-            {
-              src: urlCoverArt,
-              sizes: '128x128',
-              type: 'image/png'
-            },
-            {
-              src: urlCoverArt,
-              sizes: '192x192',
-              type: 'image/png'
-            },
-            {
-              src: urlCoverArt,
-              sizes: '256x256',
-              type: 'image/png'
-            },
-            {
-              src: urlCoverArt,
-              sizes: '384x384',
-              type: 'image/png'
-            },
-            {
-              src: urlCoverArt,
-              sizes: '512x512',
-              type: 'image/png'
+                if ('mediaSession' in navigator) {
+                    navigator.mediaSession.metadata = new MediaMetadata({
+                        title: song,
+                        artist: artist,
+                        artwork: [{
+                                src: urlCoverArt,
+                                sizes: '96x96',
+                                type: 'image/png'
+                            },
+                            {
+                                src: urlCoverArt,
+                                sizes: '128x128',
+                                type: 'image/png'
+                            },
+                            {
+                                src: urlCoverArt,
+                                sizes: '192x192',
+                                type: 'image/png'
+                            },
+                            {
+                                src: urlCoverArt,
+                                sizes: '256x256',
+                                type: 'image/png'
+                            },
+                            {
+                                src: urlCoverArt,
+                                sizes: '384x384',
+                                type: 'image/png'
+                            },
+                            {
+                                src: urlCoverArt,
+                                sizes: '512x512',
+                                type: 'image/png'
+                            }
+                        ]
+                    });
+                }
             }
-            ]
-          });
         }
-      }
+        xhttp.open('GET', 'https://prod-api.radioapi.me/1ceb9727-3e36-4e64-99e7-f776b50c7f4f/musicsearch?query=' + artist + ' ' + song);
+        xhttp.send();
     }
-    xhttp.open('GET', 'https://api.miradio.pro/musicsearch?query=' + artist + ' ' + song + '&service=' + API_SERVICE.toLowerCase());
-    xhttp.send();
-  }
 
   this.changeVolumeIndicator = function (volume) {
     document.getElementById('volIndicator').innerHTML = volume;
