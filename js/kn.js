@@ -75,11 +75,11 @@ function Page() {
     // Default cover art
     var urlCoverArt = DEFAULT_COVER_ART; 
     // Defining Track Backgrounds - Above
-        const Commercial_Break = "https://live.staticflickr.com/65535/53456049137_725d31457d_b.jpg";
+        const Commercial_Break = 'https://cdn.bintangtenggarafm.com/img/Commercial_Break.png';
         const Bintang_Tenggara = 'https://cdn.bintangtenggarafm.com/img/rbt-cover.png';
         const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53804698952_be7cefe6cd_z.jpg';
-        const TS = 'https://live.staticflickr.com/65535/53806077625_4cd26b7cf5_z.jpg';
-        const Dengarkami = 'https://live.staticflickr.com/65535/53813054961_c1727b86fd.jpg';
+        const TS = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu5GlUhLfq46cQDunTm2S2us2yYjEZ6lGY-nBs2nmwbCxO_3YHalyl0t772xf66ZYQoi4OdSZbknJUl5wvAaM-c45HmJcpnScwsfYD_sd4IVWTYkc-V6qqKGk3DVooBBASOcqpCdQa2fENlWh4vHr4DkKlxn7MnKj3PB_An7HavfcW_NqtZO-yPBKce-oq/s1600/TimeSignal.jpg';
+        const Dengarkami = 'https://live.staticflickr.com/65535/53972769374_6850dd307a_b.jpg';
         const jingle = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
         const TANDAWAKTUSHOLATDHUHUR = 'https://live.staticflickr.com/65535/53815587960_2ded7e8990_z.jpg';
         const ASHAR = 'https://live.staticflickr.com/65535/53808429057_45e11e4986_z.jpg';
@@ -123,6 +123,7 @@ function Page() {
         const Second_Civil = 'https://i.scdn.co/image/ab67616d0000b2732f75cb4fe81408c68d9e847d'; 
         const Ismi_Azis = 'https://i.scdn.co/image/ab67616d0000b273835d5ee8832686e418f78e4f'; 
         const IKLAN = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_jT-59DMrZxG0adpN-g_aRyaQerImHeqMBjPktsug-BeevbsqQNNZY-yhmwamvEOeFw43R0-BUtdmXxrDZTsCYziDeOvKxne968l9N0ECtpvRxPVReHMHa89oewr-Ac2YBcJfKrNX09gKmOW20NOISglFsV38c44TREtSEzK1p221sY8DNtu6R0HXX7OA/s1600/500x500iklan.jpg'; 
+        const Station_Offline = 'https://cdn.bintangtenggarafm.com/img/offline.jpg'; 
 
         // should put track recognition and change in DOM text
 
@@ -173,6 +174,7 @@ function Page() {
         else if (artistRadio == 'Second Civil') {var urlCoverArt = Second_Civil;}
         else if (artistRadio == 'Ismi Azis') {var urlCoverArt = Ismi_Azis;}
         else if (artistRadio == 'IKLAN') {var urlCoverArt = IKLAN;}
+        else if (songRadio == 'Station Offline') {var urlCoverArt = Station_Offline;}
     else {var urlCoverArt = DEFAULT_COVER_ART;}
 
    // Get cover art for song history
@@ -211,11 +213,11 @@ function Page() {
   
   // Artist Covers - Below 
    this.refreshCover = function (song = '', artist) {
-        const Commercial_Break = "https://live.staticflickr.com/65535/53456049137_725d31457d_b.jpg";
+        const Commercial_Break = 'https://cdn.bintangtenggarafm.com/img/Commercial_Break.png';
         const Bintang_Tenggara = 'https://cdn.bintangtenggarafm.com/img/rbt-cover.png';
         const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53804698952_be7cefe6cd_z.jpg';
-        const TS = 'https://live.staticflickr.com/65535/53806077625_4cd26b7cf5_z.jpg';
-        const Dengarkami = 'https://live.staticflickr.com/65535/53813054961_c1727b86fd.jpg';
+        const TS = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu5GlUhLfq46cQDunTm2S2us2yYjEZ6lGY-nBs2nmwbCxO_3YHalyl0t772xf66ZYQoi4OdSZbknJUl5wvAaM-c45HmJcpnScwsfYD_sd4IVWTYkc-V6qqKGk3DVooBBASOcqpCdQa2fENlWh4vHr4DkKlxn7MnKj3PB_An7HavfcW_NqtZO-yPBKce-oq/s1600/TimeSignal.jpg';
+        const Dengarkami = 'https://live.staticflickr.com/65535/53972769374_6850dd307a_b.jpg';
         const JINGLE = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
         const TANDAWAKTUSHOLATDHUHUR = 'https://live.staticflickr.com/65535/53815587960_2ded7e8990_z.jpg';
         const ASHAR = 'https://live.staticflickr.com/65535/53808429057_45e11e4986_z.jpg';
@@ -259,6 +261,7 @@ function Page() {
         const Second_Civil = 'https://i.scdn.co/image/ab67616d0000b2732f75cb4fe81408c68d9e847d'; 
         const Ismi_Azis = 'https://i.scdn.co/image/ab67616d0000b273835d5ee8832686e418f78e4f'; 
         const IKLAN = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3kvdmC7dAKO4NEBIHYqzIVCpCUjPipqTOwGJ-PZceBRYHQIhRI61imk6t2QXqJBBRsI4MYazWX1ecCGLery0jUwK9fkPpv7YQHKvE1W4OzRqHpal3VMsAvwl1pwYx28_-wP1KS9nq2EaR2E2qv3hw0k_mbfo9FagXNwhYNaOmZGRreSQwn2XsZ4FCyiw_/s1600/1200x1200iklan.jpg';
+        const Station_Offline = 'https://cdn.bintangtenggarafm.com/img/offline.jpg'; 
 
         if (artist == 'Commercial Break') {var urlCoverArt = Commercial_Break;}
             else if (artist == 'Bintang Tenggara') {var urlCoverArt = Bintang_Tenggara;}
@@ -307,6 +310,7 @@ function Page() {
             else if (artist == 'Second Civil') {var urlCoverArt = Second_Civil;}
             else if (artist == 'Ismi Azis') {var urlCoverArt = Ismi_Azis;}
             else if (artist == 'IKLAN') {var urlCoverArt = IKLAN;}
+            else if (song == 'Station Offline') {var urlCoverArt = Station_Offline;}
         else {var urlCoverArt = DEFAULT_COVER_ART;}
 
         var xhttp = new XMLHttpRequest();
