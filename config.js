@@ -12,7 +12,7 @@ var settings = {
     'radio_name': 'Bintang Tenggara',
 
     // URL of streaming
-    'url_streaming': 'https://asv.alhastream.com/radio_bintang_tenggara_2.0/radio',
+    'url_streaming': 'https://asv.alhastream.com/listen/radio_bintang_tenggara_2.0/radio',
 
     //NOW PLAYING AzuraCast API.
     'api_url': 'https://asv.alhastream.com/api/nowplaying/radio_bintang_tenggara_2.0',
