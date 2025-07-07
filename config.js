@@ -12,10 +12,10 @@ var settings = {
     'radio_name': 'Bintang Tenggara',
 
     // URL of streaming
-    'url_streaming': 'https://asv.alhastream.com/listen/radio_bintang_tenggara_2.0/rbtfm',
+    'url_streaming': 'https://sv.stri.my.id/listen/radio_bintang_tenggara_2.0/rbtfm',
 
     //NOW PLAYING AzuraCast API.
-    'api_url': 'https://asv.alhastream.com/api/nowplaying/radio_bintang_tenggara_2.0',
+    'api_url': 'https://sv.stri.my.id/api/nowplaying/radio_bintang_tenggara_2.0',
 
     // Visit https://api.vagalume.com.br/docs/ to get your API key
     'api_key': '18fe07917957c289983464588aabddfb',
