@@ -75,12 +75,12 @@ function Page() {
     // Default cover art
     var urlCoverArt = DEFAULT_COVER_ART; 
     // Defining Track Backgrounds - Above
-        const Commercial_Break = 'https://cdn.bintangtenggarafm.com/img/Commercial_Break.png';
+        const Commercial_Break = 'https://thumbs2.imgbox.com/32/65/S8LZw7lI_t.png';
         const Bintang_Tenggara = 'https://cdn.bintangtenggarafm.com/img/rbt-cover.png';
         const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53804698952_be7cefe6cd_z.jpg';
-        const TS = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu5GlUhLfq46cQDunTm2S2us2yYjEZ6lGY-nBs2nmwbCxO_3YHalyl0t772xf66ZYQoi4OdSZbknJUl5wvAaM-c45HmJcpnScwsfYD_sd4IVWTYkc-V6qqKGk3DVooBBASOcqpCdQa2fENlWh4vHr4DkKlxn7MnKj3PB_An7HavfcW_NqtZO-yPBKce-oq/s1600/TimeSignal.jpg';
+        const TS = 'https://thumbs2.imgbox.com/93/fe/zMn8oTEB_t.png';
         const Dengarkami = 'https://live.staticflickr.com/65535/53972769374_6850dd307a_b.jpg';
-        const jingle = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
+        const jingle = 'https://lastfm.freetls.fastly.net/i/u/ar0/a25b0e8fa1772422c6ebb3dd61316df2.png';
         const TANDAWAKTUSHOLATDHUHUR = 'https://live.staticflickr.com/65535/53815587960_2ded7e8990_z.jpg';
         const ASHAR = 'https://live.staticflickr.com/65535/53808429057_45e11e4986_z.jpg';
         const ADZANMAGHRIB = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNqNb72rVTrjbv4OaLt1qAFkjySlaFJp34YyC_XJ6RNtoBXq_bYSp8cmubhyphenhyphenKBUxxytuneVwHHCSMmomBwSYN4LdmH6QXTV1e5YIkjTS0677w_lnuMqX3isz5WIhFO_6pAHJriBkQyevuv5AgH1_hpsoQYsliB_5KsyFzXi2STQ9GGKWIB9l5IiAg8_uuc/s1600/sXTgm2j.jpg';
@@ -213,12 +213,12 @@ function Page() {
   
   // Artist Covers - Below 
    this.refreshCover = function (song = '', artist) {
-        const Commercial_Break = 'https://cdn.bintangtenggarafm.com/img/Commercial_Break.png';
+        const Commercial_Break = 'https://thumbs2.imgbox.com/32/65/S8LZw7lI_t.png';
         const Bintang_Tenggara = 'https://cdn.bintangtenggarafm.com/img/rbt-cover.png';
         const JINGLESETELAHIKLAN = 'https://live.staticflickr.com/65535/53804698952_be7cefe6cd_z.jpg';
-        const TS = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu5GlUhLfq46cQDunTm2S2us2yYjEZ6lGY-nBs2nmwbCxO_3YHalyl0t772xf66ZYQoi4OdSZbknJUl5wvAaM-c45HmJcpnScwsfYD_sd4IVWTYkc-V6qqKGk3DVooBBASOcqpCdQa2fENlWh4vHr4DkKlxn7MnKj3PB_An7HavfcW_NqtZO-yPBKce-oq/s1600/TimeSignal.jpg';
+        const TS = 'https://thumbs2.imgbox.com/93/fe/zMn8oTEB_t.png';
         const Dengarkami = 'https://live.staticflickr.com/65535/53972769374_6850dd307a_b.jpg';
-        const JINGLE = 'https://live.staticflickr.com/65535/53809988652_4b13186277_z.jpg';
+        const JINGLE = 'https://lastfm.freetls.fastly.net/i/u/ar0/a25b0e8fa1772422c6ebb3dd61316df2.png';
         const TANDAWAKTUSHOLATDHUHUR = 'https://live.staticflickr.com/65535/53815587960_2ded7e8990_z.jpg';
         const ASHAR = 'https://live.staticflickr.com/65535/53808429057_45e11e4986_z.jpg';
         const ADZANMAGHRIB = 'https://i.scdn.co/image/ab67616d0000b273f9fc89132411c52d8c6bc537';
