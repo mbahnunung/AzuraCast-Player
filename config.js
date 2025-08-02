@@ -9,7 +9,7 @@
 */
 
 var settings = {
-    'radio_name': 'Bintang Tenggara',
+    'radio_name': 'Live Bintang Tenggara',
 
     // URL of streaming
     'url_streaming': 'https://sv.stri.my.id/listen/radio_bintang_tenggara_2.0/rbtfm',
