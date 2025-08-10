@@ -13,7 +13,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 const RADIO_NAME = 'Bintang Tenggara - Live streaming';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR ETC.... DOES NOT SUPPORT HLS
-const URL_STREAMING = "https://sv.stri.my.id:3310/rbtfm"
+const URL_STREAMING = "https://sv.stri.my.id:3350/rbtfm"
 
 // NEW UNIFIED API ENDPOINT
 const API_URL = "https://sv.stri.my.id/api/nowplaying/27"
