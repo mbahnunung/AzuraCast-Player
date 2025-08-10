@@ -50,7 +50,7 @@ window.onload = () => {
   // Interval to get streaming data in milliseconds
   setInterval(() => {
     getStreamingData()
-  }, 5000)
+  }, 4000)
 }
 
 // Loading state helpers
