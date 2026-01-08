@@ -104,7 +104,7 @@ function Page() {
       $historicDiv[n].classList.add('animated');
       $historicDiv[n].classList.add('slideInRight');
     }
-    xhttp.open('GET', 'https://itunes.apple.com/search?term=' + info.song.artist + ' ' + info.song.title);
+    xhttp.open('GET', 'https://itunes.apple.com/search?term=' + info.song.artist + ' ' + info.song.title + '&media=music&limit=1', true)
     xhttp.send();
 
     setTimeout(function () {
@@ -178,7 +178,7 @@ function Page() {
                 }
             }
         }
-        xhttp.open('GET', 'https://itunes.apple.com/search?term=' + artist + ' ' + song);
+        xhttp.open('GET', 'https://itunes.apple.com/search?term=' + artist + ' ' + song + '&media=music&limit=1', true);
         xhttp.send();
     }
 
