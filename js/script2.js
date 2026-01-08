@@ -45,32 +45,32 @@ window.onload = function () {
 
 // DOM control
 function Page() {
-  this.changeTitlePage = function (title = RADIO_NAME) {
-    document.title = title;
-  };
+    this.changeTitlePage = function (title = RADIO_NAME) {
+        document.title = title;
+    };
 
-  this.refreshCurrentSong = function (song, artist) {
-    var currentSong = document.getElementById('currentSong');
-    var currentArtist = document.getElementById('currentArtist');
+    this.refreshCurrentSong = function (song, artist) {
+        var currentSong = document.getElementById('currentSong');
+        var currentArtist = document.getElementById('currentArtist');
 
-    if (song !== currentSong.innerHTML) {
-      // Animate transition
-      currentSong.className = 'animated flipInY text-uppercase';
-      currentSong.innerHTML = song;
+        if (song !== currentSong.innerHTML) {
+            // Animate transition
+            currentSong.className = 'animated flipInY text-uppercase';
+            currentSong.innerHTML = song;
 
-      currentArtist.className = 'animated flipInY text-capitalize';
-      currentArtist.innerHTML = artist;
+            currentArtist.className = 'animated flipInY text-capitalize';
+            currentArtist.innerHTML = artist;
 
-      // Refresh modal title
-      document.getElementById('lyricsSong').innerHTML = song + ' - ' + artist;
+            // Refresh modal title
+            document.getElementById('lyricsSong').innerHTML = song + ' - ' + artist;
 
-      // Remove animation classes
-      setTimeout(function () {
-        currentSong.className = 'text-uppercase';
-        currentArtist.className = 'text-capitalize';
-      }, 2000);
+            // Remove animation classes
+            setTimeout(function () {
+                currentSong.className = 'text-uppercase';
+                currentArtist.className = 'text-capitalize';
+            }, 2000);
+        }
     }
-  }
 
   this.refreshHistoric = function (info, n) {
     var $historicDiv = document.querySelectorAll('#historicSong article');
