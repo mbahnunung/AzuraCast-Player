@@ -6,7 +6,7 @@ const urlsToCache = [
   '/',
   '/live',
   '/css/style.css',
-  '/js/script.js',
+  '/js/sazura-script.js',
   '/img/cover.png',
   // Add other resources you want to cache here
 ];
@@ -37,3 +37,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+
