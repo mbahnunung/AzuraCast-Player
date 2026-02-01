@@ -272,7 +272,7 @@ input[type=range]::-ms-thumb {
 
 .historic h2 {
     color: #0090ff;
-    border-bottom: 2px solid #ef7f1a;
+    border-bottom: 2px solid #fefefe;
     font-size: 18px;
     font-weight: bold;
     text-transform: Letter case;
