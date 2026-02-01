@@ -12,9 +12,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 const RADIO_NAME = 'Your Radio!';
 
-// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
-var API_SERVICE = 'ITUNES';
-
 // Change Stream Audio URL from AzuraCast Here.
 const URL_STREAMING = 'https://asv.alhastream.com:3350/rbtfm';
 
