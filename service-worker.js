@@ -5,8 +5,8 @@ const CACHE_NAME = 'rbt-radio-v1';
 const urlsToCache = [
   '/',
   '/live',
-  '/css/style.css',
-  '/js/sazura-script.js',
+  '/css/rbtlive.css',
+  '/js/azura-script.js',
   '/img/cover.png',
   // Add other resources you want to cache here
 ];
@@ -37,4 +37,5 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+
 
